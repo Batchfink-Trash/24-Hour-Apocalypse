@@ -14,6 +14,14 @@ def createCharacter():
     print("\n --- Create your character! --- ")
     time.sleep(0.5)
     firstname = input("\nForename: ")
+    #character limiter, remove hashtags if it is a good idea :D
+    #this sorts the UI out, as the UI will mess up if the name is too long :/
+    #unless you can force the name to cut off the last few letters, like this:
+    #firstname = firstname[:10]   (uses the first 10/9 letters of the str)
+
+    #if len(firstname) > (10, 15, 20 etc.)
+        #tell them it's bad or somethin'
+    #else:
     surname = input("Surname: ")
     age = input("Age: ")
     gender = input("Gender (m/f): ")
