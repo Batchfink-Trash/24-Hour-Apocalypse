@@ -1,0 +1,1 @@
+""" The story line for an oap. """
