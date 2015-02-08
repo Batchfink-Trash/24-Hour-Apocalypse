@@ -28,7 +28,6 @@ class Cane(object):
     def smack():
         pass
 
-
 class Bat(object):
     def smack():
         pass
