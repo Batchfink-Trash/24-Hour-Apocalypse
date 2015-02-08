@@ -11,9 +11,9 @@ class Player(object):
         self.age = int(age)
         self.gender = gender
         self.health = health
-        if(self.age >= 3 and self.age <= 10):
+        if(self.age >= 3 and self.age <= 6):
             self.bracket = "Infant"
-        if(self.age >= 11 and self.age <= 18):
+        if(self.age >= 7 and self.age <= 18):
              self.bracket = "Child"
         elif(self.age >= 19 and self.age <= 60):
             self.bracket = "Adult"
