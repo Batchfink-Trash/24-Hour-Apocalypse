@@ -3,7 +3,7 @@ import os
 """Misc methods"""
 
 def printUI(text, health, time, name):
-     #TODO
+     #TODO     maybe print name[:10] instead
      print("\n               Name: " + name + "  |  " + "Health: " + str(health) + "  |  " + "Time: " + time)
      print("--------------------------------------------------------------------------------")
      print(text)
