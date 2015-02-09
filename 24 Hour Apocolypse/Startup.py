@@ -2,6 +2,8 @@
 #JESUS CHRIST MAN.  YOU'VE OUTDONE URSEFL
 #Is this why you weren't in school today?
 #cos you did this instead of French
+#Nah, did this yesterday. Was ill again today, me and sister stayed at home today.
+#Cool that you like it tho, changed it a lil' tho.
  
 import time
 import sys
