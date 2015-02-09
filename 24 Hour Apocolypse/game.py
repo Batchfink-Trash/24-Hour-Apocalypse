@@ -3,10 +3,11 @@ import SetUp
 from Utils import *
 import pickle
 import TitleAnimation
+from Stories import child
 
 #TitleAnimation.animation()
 
-animateTitle("IMMA TITLE!")
+child.maths()
 
 #SetUp.createCharacter()
 

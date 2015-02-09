@@ -2,4 +2,6 @@ import game
 import Player
 import SetUp
 import Utils
-import Startup
+import TitleAnimation
+
+from Stories import adult, child, infant, oap
