@@ -2,9 +2,14 @@ import Player
 import SetUp
 from Utils import *
 import pickle
+import TitleAnimation
 
-SetUp.createCharacter()
+#TitleAnimation.animation()
 
-player = pickle.load(open("player.p", "rb"))
+animateTitle("IMMA TITLE!")
 
-print(player.age)
+#SetUp.createCharacter()
+
+#player = pickle.load(open("player.p", "rb"))
+
+#print(player.age)

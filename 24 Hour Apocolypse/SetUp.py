@@ -11,7 +11,7 @@ def createCharacter():
     """ It uses this info to make a new instance of the player class"""
 
     os.system("cls")
-    print("\n --- Create your character! --- ")
+    Utils.animateTitle("Create your character!")
     time.sleep(0.5)
     firstname = input("\nForename: ")
     firstname = firstname[:8]
