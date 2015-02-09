@@ -1,4 +1,7 @@
 #ASCII SAN
+#JESUS CHRIST MAN.  YOU'VE OUTDONE URSEFL
+#Is this why you weren't in school today?
+#cos you did this instead of French
  
 import time
 import sys
