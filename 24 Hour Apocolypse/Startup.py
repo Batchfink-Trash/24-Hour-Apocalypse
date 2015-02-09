@@ -3,24 +3,8 @@
 import time
 import sys
 
-
-line1 = "================================================================================"
-for char in line1:
-    time.sleep(0.005)
-    sys.stdout.write(char)
-    sys.stdout.flush()
-line2 = "================================================================================"
-for char in line2:
-    time.sleep(0.005)
-    sys.stdout.write(char)
-    sys.stdout.flush()
-line3 = "--------------------------------------------------------------------------------"
+line3 = "================================================================================"
 for char in line3:
-    time.sleep(0.005)
-    sys.stdout.write(char)
-    sys.stdout.flush()
-line4 = "--------------------------------------------------------------------------------"
-for char in line4:
     time.sleep(0.005)
     sys.stdout.write(char)
     sys.stdout.flush()
@@ -111,23 +95,8 @@ for char in line21:
     sys.stdout.write(char)
     sys.stdout.flush()
 print ("\n")
-line22 = "--------------------------------------------------------------------------------"
-for char in line22:
-    time.sleep(0.005)
-    sys.stdout.write(char)
-    sys.stdout.flush()
-line23 = "--------------------------------------------------------------------------------"
+line23 = "================================================================================"
 for char in line23:
-    time.sleep(0.005)
-    sys.stdout.write(char)
-    sys.stdout.flush()
-line24 = "================================================================================"
-for char in line24:
-    time.sleep(0.005)
-    sys.stdout.write(char)
-    sys.stdout.flush()
-line25 = "================================================================================"
-for char in line25:
     time.sleep(0.005)
     sys.stdout.write(char)
     sys.stdout.flush()
