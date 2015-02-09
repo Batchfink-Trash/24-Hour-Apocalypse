@@ -73,7 +73,7 @@ def maths():
                 questionsDone += 1
 
         elif operation == "/":
-            print(str(questionsDone) + ". " + question, end="")
+            print(float(questionsDone) + ". " + question, end="")
             ans = input(" = ")
             if(ans == num1 / num2):
                 print("\nCorrect!\n")
