@@ -1,5 +1,6 @@
 import time
 import os
+import sys
 """Misc methods"""
 
 def printUI(text, health, time, name):
@@ -33,14 +34,8 @@ def loading():
     os.system("cls")
 
 def animateTitle(text):
-    print("\n")
-    blankStr = ""
-    for c in text:
-        blankStr += " "
-    titleSpace = "|- - - " + blankStr + " - - -|"
+    titleSpace = "|- - - " + text + " - - -|"
     for c in titleSpace:
         print(c, end="")
+        sys.stdout.flush()
         time.sleep(0.25)
-    time.sleep(0.5)
-    os.system("cls")
-    print("|- - - " + text + " - - -|")

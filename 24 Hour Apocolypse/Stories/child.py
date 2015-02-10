@@ -93,10 +93,7 @@ def english():
         marks += 1
     if ans.lower().find("sentence") != -1:
         marks += 1
-    f = ans.lower().find("fuck")
-    if f != -1 and or ans.lower().find("shit") != -1:
-        marks -= 999999999 * (f + 1)lis
-    print ("\"Alright folks, %s")
+    print ("\"Well done, %s ")
         
     pass
 
@@ -109,8 +106,26 @@ def pe():
     pass
 
 def science():
-    #symbol equations >.<
-    pass
+    print("\nTime for Science!  You walk into the chemistry classroom, hoping for a practical lesson. However, you never do practicals in chemistry, what are you talking about! even so, anything is better than physics.")
+    elements = {"Hydrogen":"h","Helium":"he","Lithium":"li","Beryllium":"be","Boron":"b","Carbon":"c","Nitrogen":"n","Oxygen":"o","Fluorine":"f","Neon":"ne","Sodium":"na","Magnesium":"mg","Aluminium":"al","Silicon":"si","Phosphorus":"p","Sulphur":"s","Chlorine":"cl","Argon":"ar","Potassium":"k","Calcium":"ca"}
+    score = 0
+    count = 0
+    while count <= 9:
+        count += 1
+        rand_element = random.choice(list(elements.keys()))
+        rand_symbol = elements[rand_element]
+        #print(rand_element)
+        #print(rand_symbol)
+        print(str(count) + ". " + rand_element + ": ", end="")
+        ans = input()
+        if(ans.lower() == rand_symbol):
+            print(" - Correct.")
+            score += 1
+        else:
+            print(" - Wrong.")
+
+    else:
+        print("\nYou sigh and put down your pencil. %s/10.  Not bad")
 
 def music():
     #notes or name that tune with snacksound
