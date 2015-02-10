@@ -34,7 +34,7 @@ def maths():
     questionsDone = 1
     
     for i in range(0, 5):
-        operations = ["+", "-", "*", "/"]
+        operations = ["+", "-", "*"]
         operation = random.choice(operations)
         num1 = random.randint(1, 30)
         num2 = random.randint(1, 30)
@@ -71,23 +71,33 @@ def maths():
             else:
                 print("\nWrong!\n")
                 questionsDone += 1
-
-        elif operation == "/":
-            print(float(questionsDone) + ". " + question, end="")
-            ans = input(" = ")
-            if(ans == num1 / num2):
-                print("\nCorrect!\n")
-                score += 1
-                questionsDone += 1
-            else:
-                print("\nWrong!\n")
-                questionsDone += 1
     print("\nPhew, that was easy.  I scored " + str(score) + "/5.  Not bad!")
     print("\"Alright folks, sweet lesson today.  You can go\" Everyone ran to get out of the room.")
 
 
 def english():
-    #write essay, check if it contains certain words to pass
+    print("\"Alright folks, settle down now, just got to wait for the computer to log on,\" is the usual greeting.")
+    print("We grab our books and a sheet with a question on it and sit. Another question based sheet. Great.")
+    print ("\"Explane deeply wat is wrang wit this sentnce...\" Wow.")
+    
+    marks = 0
+    ans = input ("1. ")
+    
+    if ans.lower().find("explain") != -1:
+        marks += 1
+    if ans.lower().find("what") != -1:
+        marks += 1
+    if ans.lower().find("wrong") != -1:
+        marks += 1
+    if ans.lower().find("with") != -1:
+        marks += 1
+    if ans.lower().find("sentence") != -1:
+        marks += 1
+    f = ans.lower().find("fuck")
+    if f != -1 and or ans.lower().find("shit") != -1:
+        marks -= 999999999 * (f + 1)lis
+    print ("\"Alright folks, %s")
+        
     pass
 
 def history():
