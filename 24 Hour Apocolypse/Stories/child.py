@@ -40,7 +40,7 @@ def maths():
         num2 = random.randint(1, 30)
         question = str(num1) + " " + operation + " " + str(num2)
         if operation == "+":
-            print(str(questionsDone) + ". " + question, end="")                   #Also, this end="" baloney doesn't work. My fancy way does :P You choose whether to fix that or not :D
+            print(str(questionsDone) + ". " + question, end="")                  
             ans = input(" = ")
             if(int(ans) == num1 + num2):
                 print("\nCorrect!\n")
