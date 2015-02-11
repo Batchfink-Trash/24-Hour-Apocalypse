@@ -81,7 +81,7 @@ def english():
     print ("\"Explane deeply wat is wrang wit this sentnce...\" Wow.")
     
     marks = 0
-    ans = input ("1. ")
+    ans = input("1. ")
     
     if ans.lower().find("explain") != -1:
         marks += 1
@@ -93,15 +93,10 @@ def english():
         marks += 1
     if ans.lower().find("sentence") != -1:
         marks += 1
-    f = ans.lower().find("fuck")
-    if f != -1 and or ans.lower().find("shit") != -1:
-        marks -= 999999999 * (f + 1)lis
-    print ("\"Alright folks, %s")
-        
-    pass
+    print ("\"Alright folks, next on the list is " + Player.fore + ", so, " + Player.fore + ", you ended up with " + str(marks) + "/5. Well done " + Player.fore + "!\" Thanks sir. Thanks.")
 
 def history():
-    #name dates?
+    #name dates
     pass
 
 def pe():
@@ -117,7 +112,48 @@ def music():
     pass
 
 def geography():
-    #country quiz eg. capitals
+    print ("A geography quiz! Sarcasm! We're given a sheet as we walk in and are told to sit and do it as soon as we start. First to finish and get all marks wins a prize!")
+    print ("I should try and win that prize!")
+
+    correct = 0
+    questionNum = 1
+    countries = ["England", "France", "Spain", "Portugal", "Germany", "Sweden", "Denmark", "Netherlands"]
+    
+    for i in range(0,5):
+        countriesDone = []
+        country = random.choice(countries)
+        countries.remove(country)
+        capital = ""
+        if country == "England":
+            capital = "london"
+        elif country == "France":
+            capital = "paris"
+        elif country == "Spain":
+            capital = "madrid"
+        elif country == "Portugal":
+            capital = "lisbon"
+        elif country == "Germany":
+            capital = "berlin"
+        elif country == "Sweden":
+            capital = "stockholm"
+        elif country == "Denmark":
+            capital = "copenhagen"
+        elif country == "Netherlands":
+            capital = "amsterdam"
+        print ("What is the capital of " + country + "?")
+        answer = input (str(questionNum) + ". ")
+        if answer.lower() == capital:
+            correct += 1
+            questionNum += 1
+            print ("Correct!")
+        else:
+            questionNum += 1
+            print ("Wrong!")
+
+    if correct == 5:
+        print ("YES! I WON A packet of rubber bands. Fantastic.")  #To develop story in the future, this prize can "Come in handy" :D
+    else:
+        print ("Well, at least I got " + correct + "/5. Not too bad I suppose")
     pass
 
 def breakTime():
