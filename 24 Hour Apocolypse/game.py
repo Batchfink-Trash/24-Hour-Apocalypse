@@ -7,7 +7,8 @@ from Stories import child
 
 #TitleAnimation.animation()
 
-child.maths()
+
+child.science()
 
 #SetUp.createCharacter()
 
