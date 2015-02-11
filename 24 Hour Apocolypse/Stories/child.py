@@ -2,6 +2,7 @@ from Utils import *
 import SetUp
 import sys
 import random
+import os
 
 """ This module contains all of the necessary methods for the child story """
 
@@ -72,11 +73,11 @@ def maths():
                 print("\nWrong!\n")
                 questionsDone += 1
     print("\nPhew, that was easy.  I scored " + str(score) + "/5.  Not bad!")
-    print("\"Alright folks, sweet lesson today.  You can go\" Everyone ran to get out of the room.")
+    print("\"Alright guys, sweet lesson today.  You can go\" Everyone ran to get out of the room.")
 
 
 def english():
-    print("\"Alright folks, settle down now, just got to wait for the computer to log on,\" is the usual greeting.")
+    print("\"Okay folks, settle down now, just got to wait for the computer to log on,\" is the usual greeting.")
     print("We grab our books and a sheet with a question on it and sit. Another question based sheet. Great.")
     print ("\"Explane deeply wat is wrang wit this sentnce...\" Wow.")
     
@@ -102,8 +103,33 @@ def history():
     pass
 
 def pe():
-    #Hmmmmmmmmmm
-    pass
+    print("You step into the dank, moist changing rooms to the beautiful smell of drugs and adolescence. Charming.")
+    print("\"Alright maggots, you've got football this lesson, so get changed. Now!\" What a guy.")
+    
+    t1goals = 0
+    t2goals = 0
+    msg = 0
+    
+    input()
+    
+    for i in range(0,90):
+        time.sleep(0.5)
+        chance = random.randint(0,100)
+        os.system("cls")
+        if chance == 1:
+            message = "Team 1 has scored."
+            t1goals += 1
+        if chance == 47:
+            message = "Team 2 has scored."
+            t2goals += 1
+        print(        "[" + str(i) + "]"        ) 
+        print(str(t1goals) + " - " + str(t2goals))
+    if t1goals > t2goals:
+        print("Yeah! You won")
+    elif t1goals == t2goals:
+        print("It was a draw.")
+    else:
+        print ("Boo, you suck!")
 
 def science():
     print("\nTime for Science!  You walk into the chemistry classroom, hoping for a practical lesson. However, you never do practicals in chemistry, what are you talking about! even so, anything is better than physics.")
