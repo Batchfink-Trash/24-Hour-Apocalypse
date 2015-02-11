@@ -186,7 +186,7 @@ def science():
         #print(rand_symbol)
         print(str(i) + ". " + rand_element + ": ", end="")
         ans = input()
-        if(ans.lower() == rand_symbol):           
+        if(ans.lower() == rand_symbol):
             print(" - Correct.")
             score += 1
         else:
@@ -214,29 +214,15 @@ def geography():
 
     correct = 0
     questionNum = 1
-    countries = ["England", "France", "Spain", "Portugal", "Germany", "Sweden", "Denmark", "Netherlands"]
+    countries = {"England":"london", "France":"paris", "Spain":"madrid", "Portugal":"lisbon", "Germany":"berlin", "Sweden":"stockholm", "Denmark":"copenhagen", "Netherlands":"amsterdam"}
     
     for i in range(0,5):
         os.system("cls")
-        country = random.choice(countries)
-        countries.remove(country)
-        capital = ""
-        if country == "England":
-            capital = "london"
-        elif country == "France":
-            capital = "paris"
-        elif country == "Spain":
-            capital = "madrid"
-        elif country == "Portugal":                         #Reckon you could do your special Key thing for this pls?
-            capital = "lisbon"
-        elif country == "Germany":
-            capital = "berlin"
-        elif country == "Sweden":
-            capital = "stockholm"
-        elif country == "Denmark":
-            capital = "copenhagen"
-        elif country == "Netherlands":
-            capital = "amsterdam"
+        country = random.choice(list(countries))
+        capital = countries[country]
+        countries.pop(country, None)
+        countries.pop(capital, None)
+        
         print ("What is the capital of " + country + "?")
         answer = input (str(questionNum) + ". ")
         if answer.lower() == capital:
@@ -253,7 +239,7 @@ def geography():
         input()
     else:
         os.system("cls")
-        print ("Well, at least I got " + correct + "/5. Not too bad I suppose")
+        print ("Well, at least I got " + str(correct) + "/5. Not too bad I suppose")
         input()
     pass
 
@@ -284,4 +270,5 @@ def friends():
 
 def aftee():
     #haha, didn't do your homework -DAFUQ? {josh}
+    #Afterschool detention {James}
     pass
