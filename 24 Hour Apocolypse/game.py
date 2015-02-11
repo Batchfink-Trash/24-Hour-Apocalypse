@@ -5,12 +5,30 @@ import pickle
 import TitleAnimation
 from Stories import child
 
-#TitleAnimation.animation()
+TitleAnimation.animation()
+
+SetUp.createCharacter()
+
+"""
+Possibly how the system would work?
 
 
-child.geography()
+if Player.bracket == "Child":
+    child.getUp()
+    child.goToSchool()
+    lessons = ["Pe","Geography","History","English","Maths","Music","Science"]
+    #choose lessons
+    #for sake of player, only three lessons
+    child.lessonchose
+    #break whatevs
+    #after school
+    #zombie pocalypse
+    
+"""
 
-#SetUp.createCharacter()
+
+
+
 
 #player = pickle.load(open("player.p", "rb"))
 

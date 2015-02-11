@@ -116,7 +116,10 @@ def english():
     input()
         
 def history():
-    #name dates
+    os.system("cls")
+    print ("\"I'm a wee bit disappointed with ya work recently, you should be workin' 'arder!\" Says your half Scottish, half Welsh history teacher.")
+    print ("You want to learn about the Egyptians, and Romans, and all the cool parts of history. Quiz. Have fun.")
+
     pass
 
 def pe():
@@ -181,7 +184,8 @@ def science():
         rand_element = random.choice(list(elements.keys()))
         rand_symbol = elements[rand_element]
         elements.pop(rand_element, None)
-        elements.pop(rand_symbol, None)       #removes from the list after, so that two of the same don't appear. Did the same with geography :D
+        elements.pop(rand_symbol, None)     
+        #removes from the list after, so that two of the same don't appear. Did the same with geography :D
         #print(rand_element)
         #print(rand_symbol)
         print(str(i) + ". " + rand_element + ": ", end="")
