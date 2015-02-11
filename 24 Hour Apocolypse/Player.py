@@ -11,14 +11,18 @@ class Player(object):
         self.age = int(age)
         self.gender = gender
         self.health = health
-        if(self.age >= 3 and self.age <= 6):
+        if(self.age <= 2):
+            self.bracket = "Baby"
+        elif(self.age >= 3 and self.age <= 6):
             self.bracket = "Infant"
-        if(self.age >= 7 and self.age <= 18):
+        elif(self.age >= 7 and self.age <= 18):
              self.bracket = "Child"
         elif(self.age >= 19 and self.age <= 60):
             self.bracket = "Adult"
-        elif(self.age >= 61):
+        elif(self.age >= 61 and self.age <= 120):
             self.bracket = "OAP"
+        elif(self.age >= 121):
+            self.bracket = "Dead"
 
     def describe(self):
         print("Name:      " + self.name)
