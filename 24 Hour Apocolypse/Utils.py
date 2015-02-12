@@ -3,24 +3,15 @@ import os
 import sys
 """Misc methods"""
 
+def generateName():
+    names = ["Josh", "James", "Callum", "Isaac", "Sam", "Aaron", "Adam", "Clive", "Richard", "Robin", "Greg", "Harold", "Andre", "Daniel", "Lloyd", "Hugh", "Jake", "Jason", "Oscar", "Bradley", "Jack", "Matthew", "Jacob", "Austin", "Derek", "Sasha", "Sophie", "Sal", "Charlotte", "Paula", "Erin", "Josey", "Mila", "Kelly", "Jennifer", "Michelle", "Sydney", "Emily", "Nadia", "Daniella", "Carly", "Lydia", "Elizabeth", "Helen", "Lily", "Rebecca", "Abigail", "Beth", "Holly", "Grace"]
+    genName = random.choice(names)
+    return genName
 
-
-""" time variables to be edited within the game """
-
-minute = 01
-hour = 7
-wtime = hour + ":" + minute + ":"   #wtime = world time          access using Utils.wtime :D
-
-""" end of time variables """
-
-
-
-def printUI(text, health, time, name):
+def printUI(health, time, name):
      #TODO     maybe print name[:10] instead
-     print("\n               Name: " + name + "  |  " + "Health: " + str(health) + "  |  " + "Time: " + wtime)
+     print("\n               Name: " + name + "  |  " + "Health: " + str(health) + "  |  " + "Time: " + time)
      print("--------------------------------------------------------------------------------")
-     print(text)
-
 
 def loading():
     os.system("cls")

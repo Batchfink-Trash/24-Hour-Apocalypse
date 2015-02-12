@@ -254,7 +254,7 @@ def breakTime():
 def form():
     os.system("cls")
     randform = random.randint(1,3)
-    if randform = 1:
+    if randform == 1:
         print ("You walk into form, and sit at your seat. You are greeted with, \"Ok guys, we're gonna do the register and then have a bit of soociaal tiime.\" His accent rings in your ears.")
         input()
         os.system("cls")
@@ -274,9 +274,9 @@ def form():
         input()
         os.system("cls") 
         print("\"Wow, what a crazy.\" Yeah.")
-    if randform = 2:
-        #mizen, do your form here:
-    if randform = 3:
+    if randform == 2:
+        None #mizen, do your form here:
+    if randform == 3:
         print ("You walk into form, and sit at your seat. You are greeted with, \"Alright children, you have lots of things to do this form time. Give me your phones!\" God I hate this woman.")
         input()
         os.system("cls")
