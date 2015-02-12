@@ -9,7 +9,7 @@ import sys
 
 minute = 1
 hour = 7
-wtime = hour + ":" + minute + ":"   #wtime = world time          access using Utils.wtime :D
+wtime = str(hour) + ":" + str(minute) + ":"   #wtime = world time          access using Utils.wtime :D
 
 """ end of time variables """
 
@@ -50,5 +50,5 @@ def animateTitle(text):
     for c in titleSpace:
         print(c, end="")
         sys.stdout.flush()
-        time.sleep(0.25)
+        time.sleep(0.05)
 

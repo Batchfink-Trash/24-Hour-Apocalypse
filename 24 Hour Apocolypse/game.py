@@ -5,9 +5,12 @@ import pickle
 import TitleAnimation
 from Stories import child
 
-TitleAnimation.animation()
+#TitleAnimation.animation()
 
-SetUp.createCharacter()
+with open("james.p", "rb") as f:            #replace james.p with josh.p or something
+    player = pickle.load(f)
+
+child.form(player)
 
 """
 Possibly how the system would work?
