@@ -7,7 +7,7 @@ import sys
 
 """ time variables to be edited within the game """
 
-minute = 01
+minute = 1
 hour = 7
 wtime = hour + ":" + minute + ":"   #wtime = world time          access using Utils.wtime :D
 

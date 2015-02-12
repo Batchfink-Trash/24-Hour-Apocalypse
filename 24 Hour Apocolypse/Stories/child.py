@@ -14,17 +14,6 @@ def goToSchool():
     # random transport
     pass
 
-"""
-
-def genSum():
-        operations = ["+", "-", "*", "/"]
-        operation = random.choice(operations)
-        num1 = random.randint(1, 30)
-        num2 = random.randint(1, 30)
-        return(str(num1) + " " + operation + " " + str(num2), operation)
-
-"""
-
 def maths():
     #FIXED IT. DON'T OVER COMPLICATE THINGS YOU SILLY MARE.
     os.system("cls")
@@ -85,7 +74,6 @@ def maths():
     os.system("cls")
     print("\"Alright guys, sweet lesson today.  You can go\" Everyone ran to get out of the room.")
     input()
-
 
 def english():
     os.system("cls")
@@ -251,14 +239,14 @@ def breakTime():
     #go to library or something.  "develop" story
     pass
 
-def form():
+def form(player):
     os.system("cls")
     randform = random.randint(1,3)
-    if randform = 1:
+    if randform == 1:                                       #PLEASE REMEMBER DOUBLE EQUALS >.<
         print ("You walk into form, and sit at your seat. You are greeted with, \"Ok guys, we're gonna do the register and then have a bit of soociaal tiime.\" His accent rings in your ears.")
         input()
         os.system("cls")
-        print ("\"Hey " + Player.fore + ".\" says your \"friend\". You can't be bothered to remember their name.")
+        print ("\"Hey " + player + ".\" says your \"friend\". You can't be bothered to remember their name.")
         input()
         os.system("cls")        
         print ("\"Hey.\"")
@@ -274,13 +262,50 @@ def form():
         input()
         os.system("cls") 
         print("\"Wow, what a crazy.\" Yeah.")
-    if randform = 2:
+    if randform == 2:
         #mizen, do your form here:
-    if randform = 3:
+        print("You walk towards B6, the school zoo.  Oh, form room of 9L2. Sorry.")
+        input()
+        os.system("cls")
+        print("The sound of shrieking children and grunting adolescents fill your ears as you sit down. Lovely.")
+        input()
+        os.system("cls")
+        print("\"I'M TRYING TO DO THE REGISTER\"")
+        input()
+        os.system("cls")
+        print("\"SHUT UP!!!\"")
+        print("\n\"OI GIMME MY PHONE!\"")
+        input()
+        os.system("cls")
+        print("\"PLEASE, FOR THE LOVE OF GOD, STOP THROWING GLUE AT THE WINDOWS!!!!!!!!!\"")
+        input()
+        os.system("cls")
+        player.health -= 5      #Kinda for story later on
+        print("...")
+        input()
+        os.system("cls")
+        print("\"" + player.fore + ", are you OK..?\"")
+        input()
+        os.system("cls")
+        print("You had knocked yourself out on the desk to escape the torment")
+        input()
+        os.system("cls")
+        print("Only your friend had noticed. The chaos continued around you.")
+        input()
+        os.system("cls")
+        print("\"Quickly, it's 12:30! RUN!\"")
+        input()
+        os.system("cls")
+        print("You sprint from the classroom, leaving the hellish cesspit behind...")
+
+        # So, I got carried away.  Most of the details mentioned above are true, but slightly exaggerated...
+        
+        pass
+    if randform == 3:
         print ("You walk into form, and sit at your seat. You are greeted with, \"Alright children, you have lots of things to do this form time. Give me your phones!\" God I hate this woman.")
         input()
         os.system("cls")
-        print ("\"Hey " + Player.fore + ".\" says your \"friend\". You can't be bothered to remember their name.")
+        print ("\"Hey " + player + ".\" says your \"friend\". You can't be bothered to remember their name.")
         input()
         os.system("cls")        
         print ("\"Hey.\"")
