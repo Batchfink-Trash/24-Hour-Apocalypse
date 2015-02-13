@@ -8,20 +8,20 @@ import os
 
 def getWokenUp():
     #be woken by a parent
-pass
+    pass
 
 def generalDay():
     #infanty stuff
-pass
+    pass
 
 def Escape():
     #run from the house to escape zombies
-pass
+    pass
 
 def findSurvivor():
     #random name!
-pass
+    pass
 
 def death():
     #some ironic death
-pass
+    pass

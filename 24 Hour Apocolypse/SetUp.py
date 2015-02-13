@@ -32,6 +32,7 @@ def createCharacter():
 
        #Dumping for use in other modules
        pickle.dump(player, open("player.p", "wb"))
+       return(player)
 
        print("woop")
     elif(ans.lower() == "n"):

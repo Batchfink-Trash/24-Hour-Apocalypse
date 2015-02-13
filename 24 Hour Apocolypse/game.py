@@ -5,9 +5,14 @@ import pickle
 import TitleAnimation
 from Stories import child
 
-TitleAnimation.animation()
+#TitleAnimation.animation()
 
-SetUp.createCharacter()
+'''with open("james.p", "rb") as f:            #replace james.p with josh.p or something. Kinda doesn't work when I'm changing the player class.... >.<
+    player = pickle.load(f)'''
+
+player = SetUp.createCharacter()
+
+print(player.timetable)
 
 """
 Possibly how the system would work?
