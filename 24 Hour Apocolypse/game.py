@@ -7,32 +7,10 @@ from Stories import child
 
 #TitleAnimation.animation()
 
-'''with open("james.p", "rb") as f:            #replace james.p with josh.p or something. Kinda doesn't work when I'm changing the player class.... >.<
-    player = pickle.load(f)'''
+with open("james.p", "rb") as f:
+    player = pickle.load(f)
 
-player = SetUp.createCharacter()
-
-print(player.timetable)
-
-"""
-Possibly how the system would work?
-
-
-if Player.bracket == "Child":
-    child.getUp()
-    child.goToSchool()
-    lessons = ["Pe","Geography","History","English","Maths","Music","Science"]
-    #choose lessons
-    #for sake of player, only three lessons
-    child.lessonchose
-    #break whatevs
-    #after school
-    #zombie pocalypse
-    
-"""
-
-
-
+child.lunch(player)
 
 
 #player = pickle.load(open("player.p", "rb"))

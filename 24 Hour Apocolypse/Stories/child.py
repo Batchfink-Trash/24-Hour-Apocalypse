@@ -242,7 +242,7 @@ def breakTime():
 def form(player):
     os.system("cls")
     randform = random.randint(1,3)
-    if randform = 1:
+    if randform == 1:
         print ("You walk into form, and sit at your seat. You are greeted with, \"Ok guys, we're gonna do the register and then have a bit of soociaal tiime.\" His accent rings in your ears.")
         input()
         os.system("cls")
@@ -345,9 +345,81 @@ def form(player):
         print("You know that it is a fake story. What a stupid story!")
         input()
 
-def lunch():
-    #eat food
-    pass
+def lunch(player):
+    #Only one story for lunch -.-
+    form(player)
+    name = generateName()
+    os.system("cls")
+    print("You walk onto the yard. This is territory that's ownership is constantly fluctuating.")
+    input()
+    os.system("cls")
+    print("Currently, it's safe for your group of quiet nerds to inhabit and eat on.")
+    input()
+    os.system("cls")
+    print("As you sit down, you notice " + name + " is missing.")
+    input()
+    os.system("cls")
+    print("\"Where's " + name + "?\" you say.")
+    input()
+    os.system("cls")
+    print("\"Oh yeah,\" your other friend says, \"They got sent home for biting someone!\"")
+    input()
+    os.system("cls")
+    print("You laugh. \"Really?\"")
+    input()
+    os.system("cls")
+    print("\"Yeah, kept moaning about flesh or something too.  Sounds like they had skiveritis if you ask me\"")
+    input()
+    os.system("cls")
+    print("Wierd. You eat your lunch in silence")
+    input()
+    os.system("cls")
+    coolName = generateName("m")
+    print("Suddenly a particularly obnoxious cool kid walks up to you.")
+    input()
+    os.system("cls")
+    print("\"Sup guys!\"")
+    input()
+    os.system("cls")
+    print("\"What the hell do you want?\" " + generateNames + " says.")
+    input()
+    os.system("cls")
+    print("\"Nothing, just wondering if anyone could lend me their maths homework.\" By this he meant, \"Give me your homework you %*£$.\"")
+    input()
+    os.system("cls")
+    ans = input("Do you stand up and confront him? (y/n) ")
+    if(ans.lower() == "y"):
+        os.system("cls")
+        print("You stand up. \"Uh... Oi, " + coolName + ", do it yourself.\"")
+        input()
+        os.system("cls")
+        print("\"You what.\"")
+        input()
+        os.system("cls")
+        print("\"Do it yourself!\"")
+        input()
+        os.system("cls")
+        print("\"No.\"")
+        input()
+        os.system("cls")
+        player.health -= 5
+        print("*smack*")
+        input()
+        os.system("cls")
+        print("You come round, and find yourself lying on the floor.  Ow.")
+
+    elif(ans.lower() == "n"):
+        print(coolName + " grabs your bag and searches through it.")
+        input()
+        os.system("cls")
+        print("\"Hey! Get off that!\"")
+        input()
+        os.system("cls")
+        print("He finds your book and walks off with it.")
+        input()
+        os.system("cls")
+        print("What an absolute pillock")
+        input()
 
 def lastLesson():
     # "you walk out of <lesson name>" etc"
