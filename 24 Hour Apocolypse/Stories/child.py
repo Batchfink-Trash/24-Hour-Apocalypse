@@ -3,6 +3,8 @@ import SetUp
 import sys
 import random
 import os
+from time import *
+from datetime import date
 
 """ This module contains all of the necessary methods for the child story """
 
@@ -75,7 +77,7 @@ def maths():
     print("\"Alright guys, sweet lesson today.  You can go\" Everyone ran to get out of the room.")
     input()
 
-def english():
+def english(player):
     os.system("cls")
     print("\"Okay folks, settle down now, just got to wait for the computer to log on,\" is the usual greeting.")
     input()
@@ -100,13 +102,60 @@ def english():
         marks += 1
     if ans.lower().find("sentence") != -1:
         marks += 1
-    print ("\"Alright folks, next on the list is " + Player.fore + ", so, " + Player.fore + ", you ended up with " + str(marks) + "/5. Well done " + Player.fore + "!\" Thanks sir. Thanks.")
+    print ("\"Alright folks, next on the list is " + player.fore + ", so, " + player.fore + ", you ended up with " + str(marks) + "/5. Well done " + player.fore + "!\" Thanks sir. Thanks.")
     input()
         
-def history():
+def history(player):
     os.system("cls")
-    print ("\"I'm a wee bit disappointed with ya work recently, you should be workin' 'arder!\" Says your half Scottish, half Welsh history teacher.")
-    print ("You want to learn about the Egyptians, and Romans, and all the cool parts of history. Quiz. Have fun.")
+    print ("\"Okay class, take out your books and turn to page 1534 in the text book.\" Says your brain-dead, monotonous hell of a history teacher.")
+    input()
+    os.system("cls")
+    score = 0
+    year = date.today().year
+    print ("Question 1")
+    sleep(0.6)
+    print ("\nWhat year did World War 2 start in?")
+    sleep(0.6)
+    print ("a. 1942")
+    sleep(0.6)
+    print ("b. 1939")
+    sleep(0.6)
+    print ("c. 1914")
+    sleep(0.6)
+    print ("d. 1839")
+    sleep(0.6)
+    ans = input("\n1. ")
+    if ans == "1939" or ans.lower() == "b":
+        score += 1
+        print ("\n/")
+        input()
+    else:
+        print ("\nx")
+        input()
+    os.system("cls")
+    print ("Question 2")
+    sleep(0.6)
+    print ("\nWhat year did the apocalypse start in?")
+    sleep(0.6)
+    print ("a. 1945")
+    sleep(0.6)
+    print ("b. 1989")
+    sleep(0.6)
+    print ("c. " + year)
+    sleep(0.6)
+    print ("d. 2003")
+    sleep(0.6)
+    ans = input("\n2. ")
+    if ans == year or ans.lower() == "c":
+        score += 1
+        print ("\n/")
+        input()
+    else:
+        print ("\nx")
+        input()
+    os.system("cls")
+    print("\"Okay class, " + player.fore + " got " + score + "/2, so yeah.\" You seriously believe that you've lost brain cells")
+    
 
     pass
 
@@ -242,7 +291,7 @@ def breakTime():
 def form(player):
     os.system("cls")
     randform = random.randint(1,3)
-    if randform = 1:
+    if randform == 1:
         print ("You walk into form, and sit at your seat. You are greeted with, \"Ok guys, we're gonna do the register and then have a bit of soociaal tiime.\" His accent rings in your ears.")
         input()
         os.system("cls")
@@ -264,23 +313,19 @@ def form(player):
         print("\"Wow, what a crazy.\" Yeah.")
     if randform == 2:
         #mizen, do your form here:
-        print("You walk towards B6, the school zoo.  Oh, form room of 9L2. Sorry.")
-        input()
-        os.system("cls")
-        print("The sound of shrieking children and grunting adolescents fill your ears as you sit down. Lovely.")
+        print("You walk into form, and sit at your seat. You are greeted with the sound of shrieking children and grunting adolescents fill your ears as you sit down. Lovely.")
         input()
         os.system("cls")
         print("\"I'M TRYING TO DO THE REGISTER\"")
         input()
         os.system("cls")
-        print("\"SNOWBALL FIGHT!!!\"")
-        print("\n\"OI GIMME MY PHONE!\"")
+        print("\"SNOWBALL FIGHT!\"")
         input()
         os.system("cls")
-        print("\"PLEASE, FOR THE LOVE OF GOD, STOP THROWING GLUE AT THE WINDOWS!!!!!!!!!\"")
+        print("\"PLEASE, FOR THE LOVE OF GOD, STOP THROWING GLUE AT THE WINDOWS!\"")
         input()
         os.system("cls")
-        print("These are the noises that echo around the room, filling your head with pain and fury and")
+        print("These are the noises that echo around the room, filling your head with pain and fury and...")
         input()
         os.system("cls")
         player.health -= 5      #Kinda for story later on
@@ -293,7 +338,10 @@ def form(player):
         print("You had knocked yourself out on the desk to escape the torment")
         input()
         os.system("cls")
-        print("Only your friend had noticed. The chaos continued around you.")
+        print("Only your friend had noticed. Speaking of noticing, you see your form tutor reading an article on the computer.")
+        input()
+        os.system("cls")
+        print("MYSTERIOUS FIGURE SEEN WALKING AROUND A SHOPPING MALL, POLICE REPORTS CANNOT INDENTIFY THE SUSPECT.")
         input()
         os.system("cls")
         print("As you pick yourself up off the floor, the bell goes.")
@@ -306,7 +354,8 @@ def form(player):
         input()
 
         # So, I got carried away.  Most of the details mentioned above are true, but slightly exaggerated...
-        
+        # ...WHAT THE HELL IS GOIN ON IN HERE? XD Gramatically fixed it as well (not so many !'s !!!!!) , and added the zombie reference. Pls read :D
+
         pass
     if randform == 3:
         print ("You walk into form, and sit at your seat. You are greeted with, \"Alright children, you have lots of things to do this form time. Give me your phones!\" God I hate this woman.")
