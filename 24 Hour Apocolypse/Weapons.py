@@ -22,39 +22,121 @@ def randomWeapon():
 
 ##Will fix later ^
 
-"""smack"""
+#SWING
 
 class Rake(object):
-    def smack():
+    def swing():
         pass
 
 class Broom(object):
-    def smack():
+    def swing():
         pass
     
 class Shovel(object):
-    def smack():
+    def swing():
         pass
     
 class Cane(object):
-    def smack():
+    def swing():
         pass
 
 class Bat(object):
-    def smack():
+    def swing():
         pass
 
 class Hammer(object):
-    def smack():
+    def swing():
         pass
 
 class Sledgehammer(object):
-    def smack():
+    def swing():
         pass
 
-"""stab"""
+class Pickaxe(object):
+    def swing():
+        pass
 
-class pitchfork(object):
+class Mattock(object):
+    def swing():
+        pass
+
+class Hoe(object):
+    def swing():
+        pass
+
+class TurfKnife():
+    def swing():
+        pass
+
+    def stab():
+        pass
+
+class Retriever(object):
+    def swing():
+        pass
+
+class ClawRake(object):
+    def swing():
+        pass
+
+class NailPuller(object):
+    def swing():
+        pass
+
+class BrickHammer(object):
+    def swing():
+        pass
+
+class BrickLayingTrowel(object):
+    def swing():
+        pass
+
+    def stab():
+        pass
+
+class GaugingTrowel(object):
+    def swing():
+        pass
+
+class PlasteringTrowel(object):
+    def swing():
+        pass
+
+class TilingTrowel(object):
+    def swing():
+        pass
+
+class SplittingMaul(object):
+    def swing():
+        pass
+
+class BrickHammer(object):
+    def swing():
+        pass
+
+class DrywallHammer(object):
+    def swing():
+        pass
+
+class DemolitionHammer(object):
+    def swing():
+        pass
+
+class CarpentersHatchet(object):
+    def swing():
+        pass
+
+class MilledFaceHammer(object):
+    def swing():
+        pass
+
+class RoofingHammer(object):
+    def swing():
+        pass
+
+#STAB
+
+class Pitchfork(object):
     def stab():
         pass
 
@@ -74,25 +156,37 @@ class StanleyKnife(object):
     def stab():
         pass
 
-"""punch"""
+class CompostFork(object):
+    def stab():
+        pass
+
+class PointingTrowel(object):
+    def stab():
+        pass
+
+#PUNCH
 
 class Box(object):
     def punch():
         pass
 
+<<<<<<< Updated upstream
 class Fist(object):
     def punch():
         pass
 
 """cut"""
+=======
+#CUT
+>>>>>>> Stashed changes
 
 class GardenShears(object):
     def cut():
         pass
 
-"""ranged"""
+#GUNS AND RANGED
 
-class Handgun(object):
+class ColtM1911(object):
     ammo = 0
     def shoot():
         accuracy = random.randint(0, 3)
@@ -104,9 +198,44 @@ class Crossbow(object):
         accuracy = random.randint(0, 5)
         return 5 * accuracy
 
-#ENTIRE NEW SET OF WEAPONS, POWER BASED
+#|--------------------------------------|
+#|ENTIRE NEW SET OF WEAPONS, POWER BASED|
+#|--------------------------------------|
 
 class CircularSaw(object):
+    power = 0
+    def cut():
+        pass
+
+class AngleGrinder(object):
+    power = 0
+    def cut():
+        pass
+
+class ReciprocatingSaw(object):
+    power = 0
+    def stab():
+        pass
+
+    def cut():
+        pass
+
+class ChainSaw(object):
+    power = 0
+    def cut():
+        pass
+
+class Drill(object):
+    power = 0
+    def stab():
+        pass
+
+class Jackhammer(object):
+    power = 0
+    def stab():
+        pass
+
+class JigSaw(object):
     power = 0
     def cut():
         pass
@@ -120,17 +249,6 @@ These will be integrated with a location system which allows us to pick a random
 For example, a locations.py file with def ArmyBase():  with a story following. This means that in the story / game.py we can pick a location for the player to arrive at and
 allow them to find a weapon there. May want to consider renaming this to 24 Year apocalypse lol We ain't gonna fit all this story based stuff like these weapons into 24
 hours, so I may have wasted my time. Either way, it doesn't really matter :D I HAD LOTS OF FUN FINDING THIS
-
-
-
-
-
-AngleGrinder - Cut
-ReciprocatingSaw - Stab / Cut
-Chainsaw - Cut
-Drill - Stab
-Jackhammer (Small) - Stab
-Jigsaw - Cut
 
 Pickaxe - Swing
 Mattock - Swing
