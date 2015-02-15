@@ -172,7 +172,7 @@ Blow torch - Gas (fuel) - Ranged / very close to the face of the thing yeah :D
 
   Beretta M9
   Beretta 70
-  Colt M19111
+  Colt M1911
   Desert Eagle
   Fort 12
   Glock 19
@@ -240,4 +240,4 @@ Blow torch - Gas (fuel) - Ranged / very close to the face of the thing yeah :D
 
 """
 
-# F*** me.  Do you want to kill us?
+# F*** me.  Do you want to kill us? YES
