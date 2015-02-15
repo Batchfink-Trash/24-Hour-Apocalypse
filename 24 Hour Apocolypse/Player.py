@@ -6,14 +6,16 @@ import Weapons
 class Player(object):
     """The Player class. This holds all variables and methods ascociated with the player character"""
 
-    def __init__(self, fore, sur, age, gender, health, weapon):
+    #TODO Add time for loading and saving games
+
+    def __init__(self, fore, sur, age, gender, health):       #The weapon thing ballsed me up. I fixed it
         self.fore = fore
         self.sur = sur
         self.name = self.fore + " " + self.sur
         self.age = int(age)
         self.gender = gender
         self.health = health
-        self.weapon = Fist()
+        self.weapon = Weapons.Fist()
         if(self.age <= 2):
             self.bracket = "Baby"
         elif(self.age >= 3 and self.age <= 6):

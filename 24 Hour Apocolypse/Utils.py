@@ -64,7 +64,7 @@ def credits():
         sys.stdout.flush()
         time.sleep(0.02)
     print ("\n")
-    line3 = "99% of the work: Josh Johnson - jk of course - 100% of the work: Josh Johnson"
+    line3 = "99% of the work: Josh Johnson - jk of course - 100% of the work: Josh Johnson"     # Piss off, you've just got too much spare time :P
     for c in line3:
         print(c, end="")
         sys.stdout.flush()

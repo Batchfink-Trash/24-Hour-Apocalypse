@@ -4,7 +4,7 @@ import time
 import os
 import pickle
 
-"""This class contains a method to set the game up -.- didn't need a whole module..."""
+"""This module contains a method to set the game up -.- didn't need a whole module..."""
 
 def createCharacter():
     """ This method provides an interface for creating the player character."""
@@ -30,8 +30,6 @@ def createCharacter():
     if(ans.lower() == "y"):
        #Start game here
 
-       #Dumping for use in other modules
-       pickle.dump(player, open("player.p", "wb"))
        return(player)
 
        print("woop")

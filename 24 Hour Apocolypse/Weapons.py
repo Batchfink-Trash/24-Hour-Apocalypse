@@ -80,6 +80,10 @@ class Box(object):
     def punch():
         pass
 
+class Fist(object):
+    def punch():
+        pass
+
 """cut"""
 
 class GardenShears(object):
@@ -236,3 +240,4 @@ Blow torch - Gas (fuel) - Ranged / very close to the face of the thing yeah :D
 
 """
 
+# F*** me.  Do you want to kill us?

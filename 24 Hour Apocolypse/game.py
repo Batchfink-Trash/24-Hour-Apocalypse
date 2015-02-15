@@ -3,14 +3,12 @@ import SetUp
 from Utils import *
 import pickle
 import TitleAnimation
-from Stories import child
-from Stories import adult
+#from Stories import child
+#from Stories import adult              <---- Did you break these?
+import os
+import SaveLoad
 
-#TitleAnimation.animation()
-
-with open("james.p", "rb") as f:
-    player = pickle.load(f)
-
+'''
 if player.bracket == "adult":
     randomm = randint(1,10)
     if randomm == 4:
@@ -19,8 +17,4 @@ if player.bracket == "adult":
     else:
         #normal adult story
         None
-
-
-#player = pickle.load(open("player.p", "rb"))
-
-#print(player.age)
+        '''
