@@ -1,17 +1,19 @@
 import Utils
 import SetUp
 import random
+import Weapons
 
 class Player(object):
     """The Player class. This holds all variables and methods ascociated with the player character"""
 
-    def __init__(self, fore, sur, age, gender, health):
+    def __init__(self, fore, sur, age, gender, health, weapon):
         self.fore = fore
         self.sur = sur
         self.name = self.fore + " " + self.sur
         self.age = int(age)
         self.gender = gender
         self.health = health
+        self.weapon = Fist()
         if(self.age <= 2):
             self.bracket = "Baby"
         elif(self.age >= 3 and self.age <= 6):

@@ -1,7 +1,10 @@
-'''import game
+import game
 import Player
 import SetUp
 import Utils
 import TitleAnimation
-
-from Stories import adult, child, infant, oap'''
+import story_adult
+import story_child
+import story_dead
+import story_oap
+import story_infant

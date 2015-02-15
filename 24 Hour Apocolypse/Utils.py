@@ -4,7 +4,7 @@ import sys
 import random
 """Misc methods"""
 
-def generateName(gender):                 # Do you check any of your code, jeeeeeeez...
+def generateName(gender):                 
     names = ["Josh", "James", "Callum", "Edward", "Kyle", "Tom", "Joe", "Chris", "Isaac", "Sam", "Aaron", "Adam", "Clive", "Richard", "Robin", "Greg", "Harold", "Andre", "Daniel", "Lloyd", "Hugh", "Jake", "Jason", "Oscar", "Bradley", "Jack", "Matthew", "Jacob", "Austin", "Derek", "Sasha", "Sophie", "Samantha", "Maddy", "Sal", "Charlotte", "Paula", "Erin", "Josey", "Mila", "Kelly", "Jennifer", "Michelle", "Sydney", "Emily", "Nadia", "Daniella", "Carly", "Lydia", "Elizabeth", "Helen", "Lily", "Rebecca", "Abigail", "Beth", "Holly", "Grace"]
     guyNames = ["Josh", "James", "Callum", "Edward", "Kyle", "Tom", "Joe", "Chris", "Isaac", "Sam", "Aaron", "Adam", "Clive", "Richard", "Robin", "Greg", "Harold", "Andre", "Daniel", "Lloyd", "Hugh", "Jake", "Jason", "Oscar", "Bradley", "Jack", "Matthew", "Jacob", "Austin", "Derek"]
     girlNames = ["Sasha", "Sophie", "Samantha", "Maddy", "Sal", "Charlotte", "Paula", "Erin", "Josey", "Mila", "Kelly", "Jennifer", "Michelle", "Sydney", "Emily", "Nadia", "Daniella", "Carly", "Lydia", "Elizabeth", "Helen", "Lily", "Rebecca", "Abigail", "Beth", "Holly", "Grace"]
@@ -50,3 +50,29 @@ def animateTitle(text):
         sys.stdout.flush()
         time.sleep(0.05)
 
+def credits():
+    os.system("cls")
+    line1 = "---------------------------------[GAME CREDITS]---------------------------------"
+    for c in line1:
+        print(c, end="")
+        sys.stdout.flush()
+        time.sleep(0.02)
+    print ("\n")
+    line2 = "Programmers: James Mizen | Josh Johnson"
+    for c in line2:
+        print(c, end="")
+        sys.stdout.flush()
+        time.sleep(0.02)
+    print ("\n")
+    line3 = "99% of the work: Josh Johnson - jk of course - 100% of the work: Josh Johnson"
+    for c in line3:
+        print(c, end="")
+        sys.stdout.flush()
+        time.sleep(0.02)
+    print ("\n")
+    line4 = "etc. etc. cba finish later"
+    for c in line4:
+        print(c, end="")
+        sys.stdout.flush()
+        time.sleep(0.02)
+    input()

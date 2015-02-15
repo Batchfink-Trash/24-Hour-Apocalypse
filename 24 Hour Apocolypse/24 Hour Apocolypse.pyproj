@@ -12,6 +12,7 @@
     <OutputPath>.</OutputPath>
     <Name>24 Hour Apocolypse</Name>
     <RootNamespace>24 Hour Apocolypse</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -26,6 +27,11 @@
     <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="story_adult.py" />
+    <Compile Include="story_child.py" />
+    <Compile Include="story_dead.py" />
+    <Compile Include="story_infant.py" />
+    <Compile Include="story_oap.py" />
     <Compile Include="Stories\child.py">
       <SubType>Code</SubType>
     </Compile>

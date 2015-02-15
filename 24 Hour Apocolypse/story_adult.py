@@ -6,6 +6,7 @@ from Utils import *
 import time
 import datetime
 import Player
+import Weapons
 
 def weekend(player):
     os.system("cls")
@@ -47,4 +48,32 @@ def weekend(player):
         print ("You decide to get changed, so you take off your shirt and put on a bra, some underwear, a skirt and a pair of jeans.")  # xD   if this is possible I s'pose
     input()
     os.system("cls")
-    print ("")
+    print ("*CRASH*")
+    input()
+    os.system("cls")
+    print("You sprint towards your door, and see a mass of \'people\' barging into your apartment.")
+    input()
+    os.system("cls")
+    print("Being on the 15th floor means windows aren't an option, so you sprint to the closet to grab a weapon")
+    input()
+    os.system("cls")
+    print ("You see a bunch of possible weapons.")
+    input()
+    print ("1. A broom")
+    input()
+    print ("2. A crowbar")
+    input()
+    print ("3. A plastic box")
+    input()
+    print ("4. A hammer")
+    input()
+    weaponPicked = str(input("Choose (number): "))
+    if weaponPicked == "1":
+        player.weapon = Weapons.Broom()
+    elif weaponPicked == "2":
+        player.weapon = Weapons.Crowbar()
+    elif weaponPicked == "3":
+        player.weapon = Weapons.Box()
+    elif weaponPicked == "4":
+        player.weapon = Weapons.Hammer()
+
