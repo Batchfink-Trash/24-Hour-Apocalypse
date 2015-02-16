@@ -189,6 +189,22 @@ class GardenShears(object):
 
 #PISTOLS
 
+class Pistol(object):
+    MAXAMMO = 0
+    def __init__(self, ammo):
+        self.ammo = 0
+    def shoot():
+        if(ammo > 0):
+            accuracy = random.randint(0, 3)
+            return 3 * accuracy
+            ammo -= 1
+        else:
+            print("DAMN SON, NO AMMO")
+
+class ColtM1911(Pistol):
+    def __init__(self, ammo):
+        self.ammo = 7
+
 class ColtM1911(object):
     ammo = 0
     def shoot():
@@ -431,3 +447,4 @@ Blow torch - Gas (fuel) - Ranged / very close to the face of the thing yeah :D
 """
 
 # F*** me.  Do you want to kill us? YES
+# Welp, I appoint you head kill-y weapon man.
