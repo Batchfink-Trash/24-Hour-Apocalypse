@@ -170,21 +170,24 @@ class Box(object):
     def punch():
         pass
 
-<<<<<<< Updated upstream
 class Fist(object):
     def punch():
         pass
 
-"""cut"""
-=======
 #CUT
->>>>>>> Stashed changes
 
 class GardenShears(object):
     def cut():
         pass
 
+#---------------
 #GUNS AND RANGED
+#---------------
+
+
+##----------GUNS
+
+#PISTOLS
 
 class ColtM1911(object):
     ammo = 0
@@ -192,11 +195,102 @@ class ColtM1911(object):
         accuracy = random.randint(0, 3)
         return 3 * accuracy
 
+class BerettaM9(object):
+    ammo = 0
+    def shoot():
+        accuracy = random.randint(0,3)
+        return 3 * accuracy
+
+class Beretta70(object):
+    ammo = 0
+    def shoot():
+        accuracy = random.randint(0,3)
+        return 3 * accuracy
+
+class DesertEagle(object):
+    ammo = 0
+    def shoot():
+        accuracy = random.randint(0,3)
+        return 3 * accuracy
+
+class Fort12(object):
+    ammo = 0
+    def shoot():
+        accuracy = random.randint(0,3)
+        return 3 * accuracy
+
+class Glock19(object):
+    ammo = 0
+    def shoot():
+        accuracy = random.randint(0,3)
+        return 3 * accuracy
+
+class Glock35(object):
+    ammo = 0
+    def shoot():
+        accuracy = random.randint(0,3)
+        return 3 * accuracy
+
+class P30(object):
+    ammo = 0
+    def shoot():
+        accuracy = random.randint(0,3)
+        return 3 * accuracy
+
+class Horhe(object):
+    ammo = 0
+    def shoot():
+        accuracy = random.randint(0,3)
+        return 3 * accuracy
+
+class SIGP220(object):
+    ammo = 0
+    def shoot():
+        accuracy = random.randint(0,3)
+        return 3 * accuracy
+
+class SIGP229(object):
+    ammo = 0
+    def shoot():
+        accuracy = random.randint(0,3)
+        return 3 * accuracy
+
+class TanfoglioForce(object):
+    ammo = 0
+    def shoot():
+        accuracy = random.randint(0,3)
+        return 3 * accuracy
+
+#MACHINE GUNS
+
+
+
+
+
+
+
+
+
+
+
+##----------MISC RANGED
+
 class Crossbow(object):
     ammo = 0
     def shoot():
         accuracy = random.randint(0, 5)
         return 5 * accuracy
+
+class NailGun(object):
+    nails = 0
+    def shoot():
+        accuracy = random.randint(0,7)
+        return 7 * accuracy
+
+class BlowTorch(object):
+    gas = 132 #out of 2000 to 10000
+    def torch():
+        pass
 
 #|--------------------------------------|
 #|ENTIRE NEW SET OF WEAPONS, POWER BASED|
@@ -249,30 +343,6 @@ These will be integrated with a location system which allows us to pick a random
 For example, a locations.py file with def ArmyBase():  with a story following. This means that in the story / game.py we can pick a location for the player to arrive at and
 allow them to find a weapon there. May want to consider renaming this to 24 Year apocalypse lol We ain't gonna fit all this story based stuff like these weapons into 24
 hours, so I may have wasted my time. Either way, it doesn't really matter :D I HAD LOTS OF FUN FINDING THIS
-
-Pickaxe - Swing
-Mattock - Swing
-Hoe - Swing
-Turf Knife - Swing / Stab
-Retriever - Swing
-Claw rake - Swing
-Nail Puller - Swing
-Compost Fork - Stab
-Brick-laying Trowel - smack / stab
-Pointing trowel - stab
-Gauging trowel - smack
-Plastering Trowel - smack
-Tiling Trowel - smack
-Splitting Maul - Swing
-brick hammer - Swing
-drywall hammer - swing
-Demolition Hammer - Swing
-Carpenters Hatchet - Swing
-Milled-face Hammer - swing
-Roofing hammer - swing
-
-Nail Gun - Ranged
-Industrial stapler - Ranged
 
 Blow torch - Gas (fuel) - Ranged / very close to the face of the thing yeah :D
 
@@ -340,6 +410,7 @@ Blow torch - Gas (fuel) - Ranged / very close to the face of the thing yeah :D
   Model 11-48
   Mossberg 500
   Double-barreled shotgun
+  SpaZ-141 (made up)
 
 
   SNIPER RIFLES
@@ -351,6 +422,7 @@ Blow torch - Gas (fuel) - Ranged / very close to the face of the thing yeah :D
   OSV-96
   JNG-90
   MSSR rifle
+  PlasmaR (made up)
 
 
 

@@ -27,6 +27,7 @@
     <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="SaveLoad.py" />
     <Compile Include="story_adult.py" />
     <Compile Include="story_child.py" />
     <Compile Include="story_dead.py" />
@@ -48,6 +49,7 @@
     <Compile Include="Stories\infant.py" />
     <Compile Include="Stories\oap.py" />
     <Compile Include="Stories\__init__.py" />
+    <Compile Include="TitleAnimation.py" />
     <Compile Include="Utils.py">
       <SubType>Code</SubType>
     </Compile>

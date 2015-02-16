@@ -56,23 +56,71 @@ def credits():
     for c in line1:
         print(c, end="")
         sys.stdout.flush()
-        time.sleep(0.02)
+        time.sleep(0.04)
     print ("\n")
-    line2 = "Programmers: James Mizen | Josh Johnson"
+    line2 = "[Lead Programmer]\n"
     for c in line2:
         print(c, end="")
         sys.stdout.flush()
-        time.sleep(0.02)
-    print ("\n")
-    line3 = "99% of the work: Josh Johnson - jk of course - 100% of the work: Josh Johnson"     # Piss off, you've just got too much spare time :P
+        time.sleep(0.04)
+    line3 = "James Mizen"
     for c in line3:
         print(c, end="")
         sys.stdout.flush()
-        time.sleep(0.02)
+        time.sleep(0.04)
     print ("\n")
-    line4 = "etc. etc. cba finish later"
+    line4 = "[Programmers]\n"
     for c in line4:
         print(c, end="")
         sys.stdout.flush()
-        time.sleep(0.02)
-    input()
+        time.sleep(0.04)
+    line5 = "Josh Johnson\n"
+    for c in line5:
+        print(c, end="")
+        sys.stdout.flush()
+        time.sleep(0.04)
+    line6 = "James Mizen"
+    for c in line6:
+        print(c, end="")
+        sys.stdout.flush()
+        time.sleep(0.04)
+    print("\n")
+    line7 = "[Lead Writer]\n"
+    for c in line7:
+        print(c, end="")
+        sys.stdout.flush()
+        time.sleep(0.04)
+    line8 = "Josh Johnson"
+    for c in line8:
+        print(c, end="")
+        sys.stdout.flush()
+        time.sleep(0.04)
+    print ("\n")
+    line9 = "[Writers]\n"
+    for c in line9:
+        print(c, end="")
+        sys.stdout.flush()
+        time.sleep(0.04)
+    line10 = "James Mizen\n"
+    for c in line10:
+        print(c, end="")
+        sys.stdout.flush()
+        time.sleep(0.04)
+    line11 = "Josh Johnson"
+    for c in line11:
+        print(c, end="")
+        sys.stdout.flush()
+        time.sleep(0.04)
+    print ("\n\n")
+    line8 = "--------------------------------[SEPCIAL THANKS]--------------------------------"
+    for c in line8:
+        print(c, end="")
+        sys.stdout.flush()
+        time.sleep(0.04)
+    print ("\n")
+    #Whoever:
+    line11 = "LIST ALL TESTERS HERE"
+    for c in line11:
+        print(c, end="")
+        sys.stdout.flush()
+        time.sleep(0.04)

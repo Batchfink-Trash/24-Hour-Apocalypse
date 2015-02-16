@@ -72,3 +72,6 @@ def loadGame():
         return pickle.load(f)
     time.sleep(0.5)
     input("\nDone!  Press any key to continue...")
+
+
+    # I freaking salute you Sir Mizen, you certainly are a special child.
