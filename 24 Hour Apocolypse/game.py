@@ -3,10 +3,14 @@ import SetUp
 from Utils import *
 import pickle
 import TitleAnimation
-#from Stories import child
-#from Stories import adult              <---- Did you break these?
 import os
 import SaveLoad
+import Weapons
+
+gun = Weapons.ColtM1911(5)
+
+
+
 
 '''
 if player.bracket == "adult":
