@@ -1,6 +1,7 @@
 import os
 import random
 import Player
+import Weapons
 from Utils import *
 
 def ArmyBase1(player):
@@ -30,6 +31,7 @@ def ArmyBase1(player):
     input()
     os.system("cls")
     q("You drop your " + player.weapon + ".", 0.02)
+    player.weapon = Weapons.Fist()
     input()
     os.system("cls")
     q("\"Good. Now. Come here.\"", 0.03)
@@ -61,13 +63,21 @@ def ArmyBase1(player):
         q("\"What's your name by the way? We could do with a fighter like you in our group.\"", 0.03)
         input()
         os.system("cls")
-        q(player.name + ". I ain't looking to join any groups though.", 0.03)
+        q("\"" + player.name + ". I ain't looking to join any groups though.\"", 0.03)
         input()
         os.system("cls")
         name = generateName()
         q("\"Shame. My name is " + name + ". We're low on food anyway, but you can take some of our emergency supplies, especially if you are going to be going back out there. No one here even knows how long this crap's been going on for, days, weeks, or even months.\"", 0.03)
         input()
         os.system("cls")
-
-        
+        q("\"So what kind of weapons do you have here?\"", 0.02)
+        input()
+        os.system("cls")
+        q("\"Well, we have mainly guns, but we do have some larger tools as well.\"", 0.03)
+        input()
+        os.system("cls")
+        q("\"Good.\"", 0.04)
+        input()
+        os.system("cls")
+        q("Upon entering this room of weapons
 
