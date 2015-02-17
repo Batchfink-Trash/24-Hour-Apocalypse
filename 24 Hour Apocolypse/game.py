@@ -5,9 +5,9 @@ import pickle
 import TitleAnimation
 import os
 import SaveLoad
-from Weapons import *
+import Weapons
 
-gun = ColtM1911(5)
+gun = Weapons.ColtM1911(5)
 
 
 

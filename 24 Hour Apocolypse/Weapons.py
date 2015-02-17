@@ -207,12 +207,6 @@ class ColtM1911(Pistol):
     def __init__(self, ammo):
         self.ammo = ammo
 
-class ColtM1911(object):
-    ammo = 0
-    def shoot():
-        accuracy = random.randint(0, 3)
-        return 3 * accuracy
-
 class BerettaM9(object):
     ammo = 0
     def shoot():
