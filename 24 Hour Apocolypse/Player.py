@@ -16,12 +16,14 @@ class Player(object):
         self.gender = gender
         self.health = health
         self.weapon = Weapons.Fist()
+        self.inventory = {"Bag":[], "Pocket":[]}    #this'll be fun :P
         if(self.age <= 2):
             self.bracket = "Baby"
         elif(self.age >= 3 and self.age <= 6):
             self.bracket = "Infant"
         elif(self.age >= 7 and self.age <= 18):
              self.bracket = "Child"
+             self.inventory["Bag"].append("Book", "Text book", "Pencil case", "Apple", "Sandwich")
              self.timetable = []
              self.timetable = self.generateDay(self.timetable)
         elif(self.age >= 19 and self.age <= 60):

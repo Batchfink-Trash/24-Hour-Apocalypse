@@ -5,6 +5,7 @@ import random
 import os
 from time import *
 from datetime import date
+import Player
 
 """ This module contains all of the necessary methods for the child story """
 
@@ -279,6 +280,7 @@ def geography():
     if correct == 5:
         os.system("cls")
         print ("YES! I WON A packet of rubber bands. Fantastic.")  #To develop story in the future, this prize can "Come in handy" :D
+        player.inventory["Pocket"].append("Rubber bands")
         input()
     else:
         os.system("cls")
@@ -439,7 +441,7 @@ def lunch(player):
     print("\"Nothing, just wondering if anyone could lend me their maths homework.\" By this they meant, \"Give me your homework you %*£$.\"")
     input()
     os.system("cls")
-    ans = input("Do you stand up and confront them? (y/n) ")
+    ans = input("Do you stand up and confront them? (Y/N) ")
     if(ans.lower() == "y"):
         os.system("cls")
         print("You stand up. \"Uh... Oi, " + coolName + ", do it yourself.\"")
@@ -467,10 +469,11 @@ def lunch(player):
         print("\"Hey! Get off that!\"")
         input()
         os.system("cls")
-        print("They finds your book and walks off with it.")
+        print("They find your book and walk off with it.")
+        player.inventory["Bag"].remove("Book")
         input()
         os.system("cls")
-        print("What an absolute pillock.")
+        print("\"What an absolute pillock.\"")
         input()
 
 def lastLesson():

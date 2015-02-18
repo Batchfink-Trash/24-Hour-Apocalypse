@@ -26,21 +26,21 @@ def createCharacter():
 
     print("Is this you?")
     player.describe()
-    ans = input("y/n ")
+    ans = input("Y/N: ")
     if(ans.lower() == "y"):
-       #Start game here
-
-       return(player)
-
-       print("woop")
+        return(player)
+        #don't need a game.start, cos you just returned player, see game.py
     elif(ans.lower() == "n"):
         print("\nAre you sure you want to remake your character?")
-        ans = input("y/n ")
+        ans = input("Y/N: ")
         if(ans.lower() == "y"):
             createCharacter()
         elif(ans.lower() == "n"):
-            #Start game here
-            #game.start or something
+            return (player)
+            #see game.py
             pass
     else:
-        print("nope")
+        print ("Assuming you are ready...")
+        time.sleep(1)
+        return(player)
+        #buggers have to learn!!!!!

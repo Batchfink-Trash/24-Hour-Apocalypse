@@ -28,10 +28,34 @@ def generateName(gender):
     else:
         return random.choice(names)
 
-def printUI(health, time, name):
+def printUI(health, time, name, player):
      #TODO     maybe print name[:10] instead
-     print("\n               Name: " + name + "  |  " + "Health: " + str(health) + "  |  " + "Time: " + time)
-     print("--------------------------------------------------------------------------------")
+     
+     line = "NAME: " + name + "  |  " + "HEALTH: " + str(health) + "  |  " + "TIME: " + time"
+     print (line)
+     dashes = ""
+     for i in len(line):
+         dashes += "-"
+     print(dashes) #-----------------------------------------------------------------------
+     print ("\n\nINVENTORY:")
+     inv = player.inventory
+     pocket = str(inv["Pocket"])
+     bag = str(inv["Bag"])
+     if pocket == "[]"@:
+         pocket = "Empty"
+     if bag == "[]":
+         bag = "Empty"
+     for c in ["{", ":", "[", "]", "}", "'"]: 
+         if c in pocket:            #removing unnecessary stuff like {'s and :'s
+             pocket = pocket.replace(c, "")
+     for c in ["{", ":", "[", "]", "}", "'"]: 
+         if c in bag:           
+             bag = bag.replace(c, "")
+     print ("Bag: " + str(bag) + "\nPocket: " + str(pocket))   #Note, does keep python format, but looks good either way, so I kept it. Try it out!
+
+     #Bag: Empty
+     #Pocket: Rubber bands, String  etc.
+
 
 def loading():
     os.system("cls")
@@ -61,7 +85,7 @@ def animateTitle(text):
     for c in titleSpace:
         print(c, end="")
         sys.stdout.flush()
-        time.sleep(0.05)
+        time.sleep(0.03)
 
 def credits():
     os.system("cls")

@@ -190,7 +190,7 @@ class GardenShears(object):
 #PISTOLS
 
 class Pistol(object):
-    MAXAMMO = 6
+    MAXAMMO = 0
     def __init__(self, ammo):
         if(ammo <= self.MAXAMMO):
             self.ammo = ammo
@@ -207,71 +207,60 @@ class ColtM1911(Pistol):
     def __init__(self, ammo):
         self.ammo = ammo
 
-class BerettaM9(object):
-    ammo = 0
-    def shoot():
-        accuracy = random.randint(0,3)
-        return 3 * accuracy
+class BerettaM9(Pistol):
+    MAXAMMO = 15
+    def __init__(self, ammo):
+        self.ammo = ammo
 
-class Beretta70(object):
-    ammo = 0
-    def shoot():
-        accuracy = random.randint(0,3)
-        return 3 * accuracy
+class Beretta70(Pistol):
+    MAXAMMO = 10
+    def __init__(self, ammo):
+        self.ammo = ammo
 
-class DesertEagle(object):
-    ammo = 0
-    def shoot():
-        accuracy = random.randint(0,3)
-        return 3 * accuracy
+class DesertEagle(Pistol):
+    MAXAMMO = 7
+    def __init__(self, ammo):
+        self.ammo = ammo
 
-class Fort12(object):
-    ammo = 0
-    def shoot():
-        accuracy = random.randint(0,3)
-        return 3 * accuracy
+class Fort12(Pistol):
+    MAXAMMO = 12
+    def __init__(self, ammo):
+        self.ammo = ammo
 
-class Glock19(object):
-    ammo = 0
-    def shoot():
-        accuracy = random.randint(0,3)
-        return 3 * accuracy
+class Glock19(Pistol):                                      #YES THESE ARE ACTUAL MAX MAGAZINE CAPACITIES
+    MAXAMMO = 15
+    def __init__(self, ammo):
+        self.ammo = ammo
 
-class Glock35(object):
-    ammo = 0
-    def shoot():
-        accuracy = random.randint(0,3)
-        return 3 * accuracy
+class Glock35(Pistol):
+    MAXAMMO = 17
+    def __init__(self, ammo):
+        self.ammo = ammo
 
-class P30(object):
-    ammo = 0
-    def shoot():
-        accuracy = random.randint(0,3)
-        return 3 * accuracy
+class P30(Pistol):
+    MAXAMMO = 15
+    def __init__(self, ammo):
+        self.ammo = ammo
 
-class Horhe(object):
-    ammo = 0
-    def shoot():
-        accuracy = random.randint(0,3)
-        return 3 * accuracy
+class Horhe(Pistol):
+    MAXAMMO = 10
+    def __init__(self, ammo):
+        self.ammo = ammo
 
-class SIGP220(object):
-    ammo = 0
-    def shoot():
-        accuracy = random.randint(0,3)
-        return 3 * accuracy
+class SIGP220(Pistol):
+    MAXAMMO = 6
+    def __init__(self, ammo):
+        self.ammo = ammo
 
-class SIGP229(object):
-    ammo = 0
-    def shoot():
-        accuracy = random.randint(0,3)
-        return 3 * accuracy
+class SIGP229(Pistol):
+    MAXAMMO = 8
+    def __init__(self, ammo):
+        self.ammo = ammo
 
-class TanfoglioForce(object):
-    ammo = 0
-    def shoot():
-        accuracy = random.randint(0,3)
-        return 3 * accuracy
+class TanfoglioForce(Pistol):
+    MAXAMMO = 9
+    def __init__(self, ammo):
+        self.ammo = ammo
 
 #MACHINE GUNS
 

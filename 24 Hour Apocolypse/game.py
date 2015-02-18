@@ -7,7 +7,13 @@ import os
 import SaveLoad
 import Weapons
 
-gun = Weapons.ColtM1911(5)
+player = SetUp.createCharacter()
+
+story_child.geography(player)
+
+print (player.inventory)
+
+#Check out mah sweet inventorah system! Works too!
 
 
 
