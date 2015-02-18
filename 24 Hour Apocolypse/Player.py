@@ -17,6 +17,7 @@ class Player(object):
         self.health = health
         self.weapon = Weapons.Fist()
         self.inventory = {"Bag":[], "Pocket":[]}    #this'll be fun :P
+        self.time = 700     #Use military time. "BE THERE A OH-SEVEN-HUNDRED HOURS MAGGOT"
         if(self.age <= 2):
             self.bracket = "Baby"
         elif(self.age >= 3 and self.age <= 6):

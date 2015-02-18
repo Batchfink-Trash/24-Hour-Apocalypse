@@ -31,7 +31,7 @@ def generateName(gender):
 def printUI(health, time, name, player):
      #TODO     maybe print name[:10] instead
      
-     line = "NAME: " + name + "  |  " + "HEALTH: " + str(health) + "  |  " + "TIME: " + time"
+     line = "NAME: " + name + "  |  " + "HEALTH: " + str(health) + "  |  " + "TIME: " + time
      print (line)
      dashes = ""
      for i in len(line):
@@ -41,7 +41,7 @@ def printUI(health, time, name, player):
      inv = player.inventory
      pocket = str(inv["Pocket"])
      bag = str(inv["Bag"])
-     if pocket == "[]"@:
+     if pocket == "[]":
          pocket = "Empty"
      if bag == "[]":
          bag = "Empty"
