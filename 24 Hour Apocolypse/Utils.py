@@ -2,20 +2,9 @@ import time
 import os
 import sys
 import random
+import game
 """Misc methods"""
 
-#PROBABLY THE BEST UTIL EVER
-
-def q(text, speed):
-    #if len(text) > 80:
-        #make it split the line onto two
-        #then do the below code for all of it :D
-    for c in text:
-        print(c, end="")
-        sys.stdout.flush()
-        time.sleep(speed)
-
-#OMG WHY DID WE NOT JUST DO THIS EARLIER!!!!!!!!! >:(
 
 def generateName(gender):                 
     names = ["Josh", "James", "Callum", "Edward", "Kyle", "Tom", "Joe", "Chris", "Isaac", "Sam", "Aaron", "Adam", "Clive", "Richard", "Robin", "Greg", "Harold", "Andre", "Daniel", "Lloyd", "Hugh", "Jake", "Jason", "Oscar", "Bradley", "Jack", "Matthew", "Jacob" , "Austin", "Derek", "Sasha", "Sophie", "Samantha", "Maddy", "Sal", "Charlotte", "Paula", "Erin", "Josey", "Mila", "Kelly", "Jennifer", "Michelle", "Sydney", "Emily", "Nadia", "Daniella", "Carly", "Lydia", "Elizabeth", "Helen", "Lily", "Rebecca", "Abigail", "Beth", "Holly", "Grace"]
@@ -31,12 +20,8 @@ def generateName(gender):
 def printUI(health, time, name, player):
      #TODO     maybe print name[:10] instead
      
-     line = "NAME: " + name + "  |  " + "HEALTH: " + str(health) + "  |  " + "TIME: " + time"
-     print (line)
-     dashes = ""
-     for i in len(line):
-         dashes += "-"
-     print(dashes) #-----------------------------------------------------------------------
+     print ("NAME: " + name + "  |  " + "HEALTH: " + str(health) + "  |  " + "TIME: " + time)
+     print ("--------------------------------------------------------------------------------")
      print ("\n\nINVENTORY:")
      inv = player.inventory
      pocket = str(inv["Pocket"])
@@ -52,6 +37,7 @@ def printUI(health, time, name, player):
          if c in bag:           
              bag = bag.replace(c, "")
      print ("Bag: " + str(bag) + "\nPocket: " + str(pocket))   #Note, does keep python format, but looks good either way, so I kept it. Try it out!
+     print ("--------------------------------------------------------------------------------")
 
      #Bag: Empty
      #Pocket: Rubber bands, String  etc.
@@ -161,3 +147,13 @@ def credits():
         print(c, end="")
         sys.stdout.flush()
         time.sleep(0.04)
+
+def q(text, speed):
+    #if len(text) > 80:
+        #make it split the line onto two
+        #then do the below code for all of it :D
+    printUI(game.player.health, "12:14", game.player.name, game.player)
+    for c in text:
+        print(c, end="")
+        sys.stdout.flush()
+        time.sleep(speed)
