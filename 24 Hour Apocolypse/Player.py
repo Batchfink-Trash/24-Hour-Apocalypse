@@ -55,3 +55,5 @@ class Player(object):
         timetable.append(lesson4)
         timetable.append(lesson5)
         return timetable
+    def attack(self, enemy):
+        pass

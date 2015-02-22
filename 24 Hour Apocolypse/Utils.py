@@ -2,7 +2,6 @@ import time
 import os
 import sys
 import random
-import game
 """Misc methods"""
 
 

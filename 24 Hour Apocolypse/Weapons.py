@@ -194,6 +194,8 @@ class Pistol(object):
     def __init__(self, ammo):
         if(ammo <= self.MAXAMMO):
             self.ammo = ammo
+    def attack(self):
+        self.shoot()        # <--- Use weapon.attack in the story to cater for non gun based weapons
     def shoot(self):
         if(ammo > 0):
             accuracy = random.randint(0, 3)

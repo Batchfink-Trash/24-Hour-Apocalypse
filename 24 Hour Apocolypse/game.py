@@ -1,7 +1,6 @@
 import Player
 import SetUp
 from Utils import *
-import pickle
 import TitleAnimation
 import os
 import SaveLoad
