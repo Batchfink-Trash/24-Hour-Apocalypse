@@ -26,7 +26,7 @@ def printUI(health, time, name, player):
      inv = player.inventory
      pocket = str(inv["Pocket"])
      bag = str(inv["Bag"])
-     if pocket == "[]"@:
+     if pocket == "[]":
          pocket = "Empty"
      if bag == "[]":
          bag = "Empty"
@@ -148,11 +148,11 @@ def credits():
         sys.stdout.flush()
         time.sleep(0.04)
 
-def q(text, speed):
+def q(text, speed, player):
     #if len(text) > 80:
         #make it split the line onto two
         #then do the below code for all of it :D
-    printUI(game.player.health, "12:14", game.player.name, game.player)
+    printUI(player.health, "12:14", player.name, player)
     for c in text:
         print(c, end="")
         sys.stdout.flush()
