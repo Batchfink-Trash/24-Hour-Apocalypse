@@ -8,7 +8,7 @@ class Player(object):
 
     #TODO Add time for loading and saving games
 
-    def __init__(self, fore, sur, age, gender, health):       #The weapon thing ballsed me up. I fixed it
+    def __init__(self, fore, sur, age, gender, health):
         self.fore = fore
         self.sur = sur
         self.name = self.fore + " " + self.sur
@@ -24,7 +24,8 @@ class Player(object):
             self.bracket = "Infant"
         elif(self.age >= 7 and self.age <= 18):
              self.bracket = "Child"
-             self.inventory["Bag"].append("Book", "Text book", "Pencil case", "Apple", "Sandwich")
+             for i in ["Book", "Text book", "Pencil case", "Apple", "Sandwich"]:    # <-- Fixed inventory system
+                self.inventory["Bag"].append(i)
              self.timetable = []
              self.timetable = self.generateDay(self.timetable)
         elif(self.age >= 19 and self.age <= 60):

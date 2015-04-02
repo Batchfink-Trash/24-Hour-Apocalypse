@@ -17,7 +17,7 @@ def goToSchool():
     # random transport
     pass
 
-def maths():
+def maths(player):
     #FIXED IT. DON'T OVER COMPLICATE THINGS YOU SILLY MARE.
     os.system("cls")
     print("\n\"Damn\", you thought.  \"It's maths.  I hate maths.\"  Quite rightly too, as you have a horrible teacher.  He makes no effort to explain the lesson and uses irritating colloquial terms, such as \"sweet\" and \"awesome!\".  This really grinds your gears")
@@ -40,7 +40,7 @@ def maths():
         num2 = random.randint(1, 30)
         question = str(num1) + " " + operation + " " + str(num2)
         if operation == "+":
-            print(str(questionsDone) + ". " + question, end="")                  
+            print(str(questionsDone) + ". " + question, end="")
             ans = input(" = ")
             if(int(ans) == num1 + num2):
                 print("\nCorrect!\n")
@@ -144,7 +144,7 @@ def history(player):
     sleep(0.6)
     print ("b. 1989")
     sleep(0.6)
-    print ("c. " + year)
+    print ("c. " + str(year))
     sleep(0.6)
     print ("d. 2003")
     sleep(0.6)
@@ -157,17 +157,17 @@ def history(player):
         print ("\nx")
         input()
     os.system("cls")
-    print("\"Okay class, " + player.fore + " got " + score + "/2, so yeah.\" You seriously believe that you've lost brain cells")
+    print("\"Okay class, " + player.fore + " got " + str(score) + "/2, so yeah.\" You seriously believe that you've lost brain cells")
     
 
     pass
 
-def pe():
+def pe(player):
     os.system("cls")
-    print("You step into the dank, moist changing rooms to the beautiful smell of drugs and adolescence. Charming.")
+    print("You step into the dank, moist changing rooms to the beautiful smell of Lynx and testosterone. Charming.")
     input()
     os.system("cls")
-    print("\"Alright maggots, you've got football this lesson, so get changed. Now!\" What a guy.")
+    print("\"Alright maggots, you've got football this lesson, so get changed. Now! FASTER!!\" What a guy.")
     input()
     os.system("cls")
     
@@ -178,7 +178,7 @@ def pe():
     input()
     
     for i in range(0,41):
-        time.sleep(0.7)
+        sleep(0.7)
         chance = random.randint(0,40)
         os.system("cls")
         
@@ -202,7 +202,7 @@ def pe():
         print("[" + str(i) + "]") 
         print(str(t1goals) + " - " + str(t2goals))
         print(miscMsg)
-    time.sleep(1)
+    sleep(1)
     if t1goals > t2goals:
         print("Yeah! You won")
     elif t1goals == t2goals:
@@ -211,11 +211,14 @@ def pe():
         print ("Boo, you suck!")
     input()
 
-def science():
+def science(player):
     #you must've been knackered xD
     #just tidied it up a lil'
     os.system("cls")
     print("\nChemistry, the one lesson which is based on speech. You can go to lectures for the same result. You suppose that it's better than physics.")
+    input()
+    os.system("cls")
+    print("\nWrite down the symbols that reresent the elements:")
     input()
     os.system("cls")
     elements = {"Hydrogen":"h","Helium":"he","Lithium":"li","Beryllium":"be","Boron":"b","Carbon":"c","Nitrogen":"n","Oxygen":"o","Fluorine":"f","Neon":"ne","Sodium":"na","Magnesium":"mg","Aluminium":"al","Silicon":"si","Phosphorus":"p","Sulphur":"s","Chlorine":"cl","Argon":"ar","Potassium":"k","Calcium":"ca"}
@@ -243,11 +246,13 @@ def science():
         print("\nYou sigh and put down your pencil angrily. " + str(score) + "/10.  Not pleased.")
         input()
 
-def music():
+def music(player):
     #notes or name that tune with snacksound -This could be difficult, especially installing it to a Library on Git, not sure how we'd achieve this {josh}
+    q("This doesn't exist yet!", 0.4, player)
+    input()
     pass
 
-def geography():
+def geography(player):
     os.system("cls")
     print ("A geography quiz! Sarcasm! We're given a sheet as we walk in and are told to sit and do it as soon as we start. First to finish and get all marks wins a prize!")
     input()
@@ -278,18 +283,22 @@ def geography():
             print ("Wrong!")
 
     if correct == 5:
+        input()
         os.system("cls")
         print ("YES! I WON A packet of rubber bands. Fantastic.")  #To develop story in the future, this prize can "Come in handy" :D
         player.inventory["Pocket"].append("Rubber bands")
         input()
     else:
+        input()
         os.system("cls")
         print ("Well, at least I got " + str(correct) + "/5. Not too bad I suppose")
         input()
     pass
 
-def breakTime():
+def breakTime(player):
     #go to library or something.  "develop" story
+    q("This doesn't exist yet!", 0.4, player)
+    input()
     pass
 
 def form(player):
@@ -421,7 +430,7 @@ def lunch(player):
     print("You laugh. \"Really?\"")
     input()
     os.system("cls")
-    print("\"Yeah, kept moaning about flesh or something too.  Sounds like they had \'skivitis\' if you ask me\"")
+    print("\"Yeah, kept moaning about flesh or something too.  Sounds like they had \'skiveritis\' if you ask me\"")
     input()
     os.system("cls")
     print("Wierd. You eat your lunch in silence")
@@ -435,10 +444,10 @@ def lunch(player):
     print("\"Sup guys!\"")
     input()
     os.system("cls")                 #here, it said "generateNames", no idea why you put that. If I am wrong, please change it. Just though dafuq?
-    print("\"What the hell do you want?\" " + friend + " says.")
+    print("\"What do you want?\" " + friend + " says.")
     input()
     os.system("cls")                                                                        #V he eh? SEXIST
-    print("\"Nothing, just wondering if anyone could lend me their maths homework.\" By this they meant, \"Give me your homework you %*£$.\"")
+    print("\"Nothing, just wondering if anyone could lend me their maths homework.\" By this they meant, \"Give me your homework you ****.\"")
     input()
     os.system("cls")
     ans = input("Do you stand up and confront them? (Y/N) ")
@@ -447,7 +456,7 @@ def lunch(player):
         print("You stand up. \"Uh... Oi, " + coolName + ", do it yourself.\"")
         input()
         os.system("cls")
-        print("\"You what.\"")
+        print("\"You what?\"")
         input()
         os.system("cls")
         print("\"Do it yourself!\"")
@@ -473,7 +482,7 @@ def lunch(player):
         player.inventory["Bag"].remove("Book")
         input()
         os.system("cls")
-        print("\"What an absolute pillock.\"")
+        print("\"Damn.\"")
         input()
 
 def lastLesson():
@@ -491,9 +500,4 @@ def sports():
 
 def friends():
     #Survive with friends! -So is this bit important? Or is this random per game? Do you HAVE to? How do you instigate this? {josh}
-    pass
-
-def aftee():
-    #haha, didn't do your homework -DAFUQ? {josh}
-    #Afterschool detention {James}
     pass

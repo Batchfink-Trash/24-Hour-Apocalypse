@@ -433,5 +433,5 @@ Blow torch - Gas (fuel) - Ranged / very close to the face of the thing yeah :D
 
 """
 
-# F*** me.  Do you want to kill us? YES
+# Do you want to kill us? YES
 # Welp, I appoint you head kill-y weapon man.
